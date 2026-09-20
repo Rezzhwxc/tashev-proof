@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "project": "tashev-proof",
+  "task": "Launch Tashev Proof v0.1.0 as a usable proof-of-done CLI",
+  "policy": {
+    "failOnRequiredFailure": true,
+    "partialOnUnverified": true,
+    "redactEvidence": true
+  },
+  "criteria": [
+    {
+      "id": "lint",
+      "title": "CLI source passes syntax checks",
+      "type": "command",
+      "command": "npm run lint",
+      "required": true,
+      "files": [
+        "src/**",
+        "bin/**",
+        "package.json"
+      ]
+    },
+    {
+      "id": "tests",
+      "title": "All automated tests pass",
+      "type": "command",
+      "command": "npm test",
+      "required": true,
+      "timeoutMs": 120000,
+      "files": [
+        "src/**",
+        "test/**",
+        "package.json"
+      ]
+    },
+    {
+      "id": "smoke",
+      "title": "Public CLI help starts successfully",
+      "type": "command",
+      "command": "npm run smoke",
+      "required": true,
+      "files": [
+        "src/**",
+        "bin/**",
+        "package.json"
+      ]
+    },
+    {
+      "id": "package",
+      "title": "npm package can be assembled",
+      "type": "command",
+      "command": "npm pack --dry-run",
+      "required": true,
+      "timeoutMs": 60000,
+      "files": [
+        "src/**",
+        "bin/**",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "id": "hero",
+      "title": "GitHub hero visual exists",
+      "type": "file_exists",
+      "path": "assets/hero.svg",
+      "required": true,
+      "files": [
+        "assets/**",
+        "README.md"
+      ]
+    },
+    {
+      "id": "readme",
+      "title": "README explains the PROVEN verdict",
+      "type": "file_contains",
+      "path": "README.md",
+      "contains": "PROVEN",
+      "required": true,
+      "files": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security trust boundary is documented",
+      "type": "file_contains",
+      "path": "SECURITY.md",
+      "contains": "command criteria",
+      "required": true,
+      "files": [
+        "SECURITY.md",
+        "src/checks.js"
+      ]
+    },
+    {
+      "id": "acceptance-1",
+      "title": "Primary proof workflow was manually reviewed end-to-end",
+      "type": "manual",
+      "required": true,
+      "instructions": "Run init, inspect contract, attest a manual criterion, run proof ship, and review report output.",
+      "tags": [
+        "acceptance"
+      ]
+    }
+  ]
+}

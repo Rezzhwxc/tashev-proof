@@ -1,0 +1,19 @@
+{
+  "name": "tashev-proof",
+  "version": "0.1.0",
+  "description": "Proof-of-done for AI-assisted development. Turn tasks into acceptance contracts and verify them with real evidence.",
+  "type": "module",
+  "bin": { "proof": "./bin/proof.js" },
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check bin/proof.js && node --check src/cli.js && node --check src/runner.js",
+    "smoke": "node ./bin/proof.js --help"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["ai", "vibe-coding", "ai-agents", "testing", "acceptance-testing", "developer-tools", "verification", "claude-code", "codex", "cursor"],
+  "repository": { "type": "git", "url": "git+https://github.com/tashev11/tashev-proof.git" },
+  "bugs": { "url": "https://github.com/tashev11/tashev-proof/issues" },
+  "homepage": "https://github.com/tashev11/tashev-proof#readme",
+  "license": "MIT",
+  "author": "Rinat Tashev"
+}

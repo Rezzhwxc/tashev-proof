@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520">
+<rect width="1280" height="520" rx="28" fill="#0c0c0f"/>
+<g transform="translate(110 55)">
+ <rect width="1060" height="410" rx="22" fill="#050505" stroke="#27272a"/>
+ <rect width="1060" height="48" rx="22" fill="#18181b"/>
+ <circle cx="26" cy="24" r="6" fill="#ef4444"/><circle cx="48" cy="24" r="6" fill="#eab308"/><circle cx="70" cy="24" r="6" fill="#22c55e"/>
+ <text x="32" y="92" fill="#4ade80" font-size="22" font-family="ui-monospace,Menlo,monospace">$ proof ship</text>
+ <text x="32" y="136" fill="#fff" font-size="20" font-family="ui-monospace,Menlo,monospace" font-weight="700">TASHEV PROOF</text>
+ <text x="32" y="169" fill="#a1a1aa" font-size="16" font-family="ui-monospace,Menlo,monospace">Task: Add customer password reset</text>
+ <text x="32" y="215" fill="#4ade80" font-size="18" font-family="ui-monospace,Menlo,monospace">✓ Project test passes</text>
+ <text x="32" y="248" fill="#4ade80" font-size="18" font-family="ui-monospace,Menlo,monospace">✓ Reset endpoint returns 200</text>
+ <text x="32" y="281" fill="#4ade80" font-size="18" font-family="ui-monospace,Menlo,monospace">✓ Expired token is rejected</text>
+ <text x="32" y="314" fill="#4ade80" font-size="18" font-family="ui-monospace,Menlo,monospace">✓ Mobile UX manually attested</text>
+ <line x1="32" y1="337" x2="1028" y2="337" stroke="#27272a"/>
+ <text x="32" y="372" fill="#d4d4d8" font-size="17" font-family="ui-monospace,Menlo,monospace">Evidence: 4 proven · 0 failed · 0 unverified</text>
+ <text x="32" y="402" fill="#4ade80" font-size="19" font-family="ui-monospace,Menlo,monospace" font-weight="700">STATUS: PROVEN ✓     READY TO SHIP ✓</text>
+</g>
+</svg>

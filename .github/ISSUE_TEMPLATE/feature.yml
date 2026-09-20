@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest a focused proof/evidence capability
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Verification problem
+      description: What cannot be honestly proven today?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Proposed evidence
+      description: What independent evidence could prove it?
+    validations:
+      required: true
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Principles
+      options:
+        - label: This does not require trusting the same coding agent's claim.
+          required: true
+        - label: This can avoid committed secrets.
+          required: true
