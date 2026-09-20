@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="470" viewBox="0 0 1280 470">
+<rect width="1280" height="470" rx="30" fill="#09090b"/>
+<text x="640" y="58" text-anchor="middle" fill="#fff" font-size="30" font-family="Arial,sans-serif" font-weight="800">The gap in vibe coding</text>
+<text x="640" y="91" text-anchor="middle" fill="#a1a1aa" font-size="17" font-family="Arial,sans-serif">Writing code got faster. Proving the task is complete did not.</text>
+<g font-family="Arial,sans-serif">
+ <rect x="65" y="132" width="515" height="265" rx="26" fill="#18181b" stroke="#3f3f46"/>
+ <text x="100" y="177" fill="#f87171" font-size="20" font-weight="800">WITHOUT PROOF</text>
+ <text x="100" y="217" fill="#fff" font-size="19" font-weight="700">AI: “Done ✅”</text>
+ <text x="100" y="255" fill="#d4d4d8" font-size="16">Human still has to discover:</text>
+ <text x="115" y="290" fill="#a1a1aa" font-size="16">• missing edge cases</text>
+ <text x="115" y="321" fill="#a1a1aa" font-size="16">• regressions in another flow</text>
+ <text x="115" y="352" fill="#a1a1aa" font-size="16">• untested mobile / API behavior</text>
+ <rect x="100" y="368" width="230" height="42" rx="12" fill="#450a0a" stroke="#7f1d1d"/>
+ <text x="215" y="395" text-anchor="middle" fill="#fca5a5" font-size="16" font-weight="700">CONFIDENCE: ASSUMED</text>
+ <path d="M605 264h70" stroke="#22c55e" stroke-width="5"/><path d="m669 254 20 10-20 10" fill="#22c55e"/>
+ <rect x="700" y="132" width="515" height="265" rx="26" fill="#052e16" stroke="#166534"/>
+ <text x="735" y="177" fill="#86efac" font-size="20" font-weight="800">WITH TASHEV PROOF</text>
+ <text x="735" y="217" fill="#fff" font-size="19" font-weight="700">Task → contract → evidence</text>
+ <text x="735" y="255" fill="#d4d4d8" font-size="16">Proof makes “done” explicit:</text>
+ <text x="750" y="290" fill="#bbf7d0" font-size="16">✓ acceptance criteria are visible</text>
+ <text x="750" y="321" fill="#bbf7d0" font-size="16">✓ checks execute independently</text>
+ <text x="750" y="352" fill="#bbf7d0" font-size="16">✓ unknown stays unverified</text>
+ <rect x="735" y="368" width="230" height="42" rx="12" fill="#064e3b" stroke="#047857"/>
+ <text x="850" y="395" text-anchor="middle" fill="#a7f3d0" font-size="16" font-weight="700">CONFIDENCE: EVIDENCE</text>
+</g>
+</svg>

@@ -103,6 +103,42 @@
       "tags": [
         "acceptance"
       ]
+    },
+    {
+      "id": "visual-assets",
+      "title": "All product SVG visuals are valid XML",
+      "type": "command",
+      "command": "for f in assets/hero-v2.svg assets/problem-solution.svg assets/pipeline.svg assets/verdicts.svg assets/architecture-v2.svg assets/test-vs-proof.svg assets/quickstart.svg assets/social-preview.svg; do xmllint --noout \"$f\"; done",
+      "required": true,
+      "files": [
+        "assets/**",
+        "README.md",
+        "README_RU.md"
+      ]
+    },
+    {
+      "id": "readme-visual",
+      "title": "English README contains visual product sections",
+      "type": "file_contains",
+      "path": "README.md",
+      "contains": "assets/problem-solution.svg",
+      "required": true,
+      "files": [
+        "README.md",
+        "assets/**"
+      ]
+    },
+    {
+      "id": "readme-ru",
+      "title": "Russian README contains the full visual explanation",
+      "type": "file_contains",
+      "path": "README_RU.md",
+      "contains": "assets/architecture-v2.svg",
+      "required": true,
+      "files": [
+        "README_RU.md",
+        "assets/**"
+      ]
     }
   ]
 }
