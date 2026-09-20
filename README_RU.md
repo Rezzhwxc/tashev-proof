@@ -9,6 +9,8 @@
   <a href="https://github.com/tashev11/tashev-proof/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/tashev11/tashev-proof?style=for-the-badge&color=22c55e"></a>
 </p>
 
+<p align="center"><a href="https://tashev11.github.io/tashev-proof/"><strong>🌐 Открыть живой лендинг</strong></a></p>
+
 # Tashev Proof — русская версия
 
 > **AI сказал «готово». Proof проверяет, так ли это.**

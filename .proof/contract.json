@@ -152,6 +152,18 @@
         "README.md",
         "README_RU.md"
       ]
+    },
+    {
+      "id": "landing-site",
+      "title": "Static landing passes local production smoke checks",
+      "type": "command",
+      "command": "node --check site/app.js && grep -q 'AI said “done”' site/index.html && grep -q '@media(max-width:680px)' site/styles.css && test -f site/assets/social-preview.svg && test -f site/robots.txt && test -f site/sitemap.xml",
+      "required": true,
+      "files": [
+        "site/**",
+        "README.md",
+        "README_RU.md"
+      ]
     }
   ]
 }

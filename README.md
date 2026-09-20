@@ -16,6 +16,8 @@
 </p>
 
 <p align="center">
+  <a href="https://tashev11.github.io/tashev-proof/"><strong>🌐 Live website</strong></a>
+  ·
   <a href="#-60-second-start"><strong>⚡ Quick start</strong></a>
   ·
   <a href="#-what-problem-does-proof-solve"><strong>🎯 Why Proof</strong></a>
