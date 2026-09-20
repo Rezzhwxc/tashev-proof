@@ -774,6 +774,32 @@ Core не требует облака.
 
 ---
 
+# 🎨 Набор визуальных материалов
+
+В репозитории есть готовый визуальный набор для README, лендинга, постов и презентаций.
+
+<p align="center">
+  <img src="assets/icons/command.svg" width="52" alt="Command evidence">
+  &nbsp;&nbsp;
+  <img src="assets/icons/file.svg" width="52" alt="File evidence">
+  &nbsp;&nbsp;
+  <img src="assets/icons/http.svg" width="52" alt="HTTP evidence">
+  &nbsp;&nbsp;
+  <img src="assets/icons/human.svg" width="52" alt="Human evidence">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/icons/proven.svg" width="52" alt="PROVEN">
+  &nbsp;&nbsp;
+  <img src="assets/icons/partial.svg" width="52" alt="PARTIAL">
+  &nbsp;&nbsp;
+  <img src="assets/icons/failed.svg" width="52" alt="FAILED">
+</p>
+
+В набор входят hero, social preview, схемы проблемы/решения, pipeline, архитектура, сравнение с тестами, quick-start иконки и статусы.
+
+Подробнее: [docs/BRANDING.md](docs/BRANDING.md).
+
+---
+
 # ❓ FAQ
 
 ### Proof сам использует AI?

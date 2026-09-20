@@ -800,6 +800,42 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
+# 🎨 Visual kit
+
+The repository also ships a reusable visual system for launch posts, landing pages and documentation.
+
+<p align="center">
+  <img src="assets/icons/command.svg" width="52" alt="Command evidence">
+  &nbsp;&nbsp;
+  <img src="assets/icons/file.svg" width="52" alt="File evidence">
+  &nbsp;&nbsp;
+  <img src="assets/icons/http.svg" width="52" alt="HTTP evidence">
+  &nbsp;&nbsp;
+  <img src="assets/icons/human.svg" width="52" alt="Human evidence">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/icons/proven.svg" width="52" alt="PROVEN">
+  &nbsp;&nbsp;
+  <img src="assets/icons/partial.svg" width="52" alt="PARTIAL">
+  &nbsp;&nbsp;
+  <img src="assets/icons/failed.svg" width="52" alt="FAILED">
+</p>
+
+Included assets:
+
+- product hero;
+- 1280×640 social-preview source;
+- problem → solution diagram;
+- verification pipeline;
+- verdict cards;
+- architecture;
+- test-framework comparison;
+- quick-start terminal visual;
+- reusable evidence and status icons.
+
+See [docs/BRANDING.md](docs/BRANDING.md).
+
+---
+
 # ❓ FAQ
 
 ### Does Proof use AI to decide whether code is correct?

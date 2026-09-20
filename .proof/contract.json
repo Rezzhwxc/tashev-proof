@@ -139,6 +139,19 @@
         "README_RU.md",
         "assets/**"
       ]
+    },
+    {
+      "id": "icon-kit",
+      "title": "Reusable brand icon kit is valid",
+      "type": "command",
+      "command": "for f in assets/icons/*.svg; do xmllint --noout \"$f\"; done && test -f docs/BRANDING.md",
+      "required": true,
+      "files": [
+        "assets/icons/**",
+        "docs/BRANDING.md",
+        "README.md",
+        "README_RU.md"
+      ]
     }
   ]
 }
