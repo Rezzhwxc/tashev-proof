@@ -8,10 +8,11 @@ Each example includes a copy-pasteable `.proof/contract.json` snippet and explai
 - why that manual step should not be faked by automation;
 - expected `PROVEN` / `PARTIAL` / `FAILED` behavior.
 
-These are illustrative contracts, not reusable "policy packs". Adapt commands, URLs and patterns to your project.
+These are illustrative contracts, not reusable "policy packs". Adapt commands, URLs and patterns to your project.  
+Schema details are described in the main README.
 
 > Conventions: ✅ PROVEN · 🟡 PARTIAL · ❌ FAILED  
-> Schema version: `1` (see `CONTRACT.md`)
+> Schema version: `1`
 
 ---
 
@@ -31,7 +32,7 @@ These are illustrative contracts, not reusable "policy packs". Adapt commands, U
       "type": "http",
       "url": "http://localhost:3000/api/signup",
       "status": 201,
-      "bodyContains": "token"
+      "contains": "token"
     },
     {
       "id": "auth.login",
@@ -39,7 +40,7 @@ These are illustrative contracts, not reusable "policy packs". Adapt commands, U
       "type": "http",
       "url": "http://localhost:3000/api/login",
       "status": 200,
-      "bodyContains": "token"
+      "contains": "token"
     },
     {
       "id": "auth.reset-email",
@@ -146,7 +147,7 @@ Idempotency logic is easy to get subtly wrong (e.g., key scope, race conditions)
       "type": "http",
       "url": "http://localhost:3000/health",
       "status": 200,
-      "bodyContains": "\"status\":\"ok\""
+      "contains": "\"status\":\"ok\""
     },
     {
       "id": "health.fast",
@@ -314,14 +315,14 @@ Visual correctness is subjective. Automation can flag changes, but only a person
       "title": "CHANGELOG.md contains v1.4.0",
       "type": "file_contains",
       "path": "CHANGELOG.md",
-      "pattern": "v1\\.4\\.0"
+      "regex": "v1\\.4\\.0"
     },
     {
       "id": "release.version",
       "title": "package.json version is 1.4.0",
       "type": "file_contains",
       "path": "package.json",
-      "pattern": "\"version\":\\s*\"1\\.4\\.0\""
+      "regex": "\"version\":\\s*\"1\\.4\\.0\""
     },
     {
       "id": "release.signoff",
@@ -358,7 +359,7 @@ Automation enforces the checklist, but the go/no-go decision is a business call,
 1. Create `.proof/contract.json` in your project root.  
 2. Copy one of the snippets above and adapt:
    - `project` and `task` to your context;
-   - `url`, `command`, `path`, and `pattern` to your actual endpoints, scripts, and files.
+   - `url`, `command`, `path`, and `regex` to your actual endpoints, scripts, and files.
 3. Run:
 
    ```bash
